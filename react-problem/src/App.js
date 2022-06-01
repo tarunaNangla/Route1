@@ -16,16 +16,19 @@ function App() {
            <div>
              <Link to="/products"><h1>ALL PRODUCTS</h1></Link>
            </div>
-{/* 
-           <div>
-             <Link to="/products/:id"><h1>PRODUCT DETAILS</h1></Link>
-           </div> */}
+
+         <div>
+            <Link to="/products/:id"><h1>PRODUCT DETAILS</h1></Link>
+          </div>
 
       </div>
       <Routes>
            <Route path="/" element={<Home />} />
            <Route path="/products" element={<AllProducts />} />
-           <Route path="/products/id" element={<Productdetails />} />
+           {/* <Route path="/products/id" element={<Productdetails />} /> */}
+           <Route path="/product/:id" element={<Productdetails />}>
+
+           </Route>
       </Routes>
     </div>
   );

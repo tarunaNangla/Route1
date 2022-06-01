@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios"
 import {Link} from "react-router-dom"
 
+
 const AllProducts = () => {
   const [data,setData]=useState([]);
   const [loading,setLoading]=useState(false);
@@ -19,7 +20,9 @@ const AllProducts = () => {
   console.log(data)
   return (
     <div className='griddata'>
+     
       {
+
         data.map((ele)=>{
           return(
             <div key={ele.id}>
