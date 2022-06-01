@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.griddata{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(9,1fr);
+  border: 1px solid black;
+}
+
+.griddata>div{
+ 
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: black;
+  color: azure;
+  
+}
